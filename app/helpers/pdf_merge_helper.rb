@@ -1,0 +1,2 @@
+module PdfMergeHelper
+end
