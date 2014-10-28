@@ -1,0 +1,6 @@
+.main
+  =form_tag '/upload', multipart: true do
+    %label
+    PDF for upload
+    =file_field_tag "file"
+  

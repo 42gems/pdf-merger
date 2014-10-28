@@ -4,3 +4,32 @@
 .style_image{
   padding-right: 400px;
 }
+
+.main {
+  height: 400px; /*Set line-height to this value*/
+  width: 600px;
+  background: #eee;
+  margin: 150px auto;
+}
+
+.footer {
+  margin-top: 150px;
+  padding-top: 5px;
+  border-top: 1px solid #480000;
+  color: #999;
+}
+small {
+  float: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+}
+ul {
+  float: right;
+  list-style: none;
+  li {
+    float: left;
+    margin-left: 10px;
+  }
+}
+
+
