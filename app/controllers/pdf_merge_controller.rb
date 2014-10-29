@@ -4,11 +4,11 @@ class PdfMergeController < ApplicationController
   end
 
 
-  def merge
+  def upload
     require "pdf/merger"
     failure_list = []
-    @document = params[:file]
-    @document1 = params[:file1]
+    @document = params[:pdf]
+    @document1 = params[:pdf1]
     pdf = PDF::Merger.new
     pdf.add_file @document
     pdf.add_file @document1

@@ -1,15 +1,18 @@
-.main
-  =form_tag '/upload', multipart: true do
-    %label
-    PDF for upload
-    =file_field_tag "file"
+.form.form-horizontal.form-group
+%label#exampleInputFile
+File input
+= form_tag({action: :upload}, multipart: true) do
+  = file_field_tag 'pdf'
 
-    %label
-    Pdf2 for upload
-    =file_field_tag "file1"
+%label
+File 2 input
+= form_tag({action: :upload}, multipart: true) do
+  = file_field_tag 'pdf1'
 
-.btn.btn-large.btn-primary
-  = link_to "Merge", merge_path
+  %button.btn.btn-default
+    Submit
 
 
-  
+
+
+

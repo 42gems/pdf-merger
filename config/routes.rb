@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'pdf_merge#home'
 
-  match '/merge', to: 'pdf_merge#merge', via: 'get'
+ match '/upload', to: 'pdf_merge#upload', via: 'post'
 
 end

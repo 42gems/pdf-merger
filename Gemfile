@@ -18,6 +18,8 @@ gem 'bootstrap-sass'
 gem 'haml'
 gem 'rjb'
 gem 'pdf-merger'
+gem "binding_of_caller"
+gem "better_errors"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
