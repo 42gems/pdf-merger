@@ -16,6 +16,8 @@ gem 'therubyracer',  platforms: :ruby
 
 gem 'bootstrap-sass'
 gem 'haml'
+gem 'rjb'
+gem 'pdf-merger'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

@@ -80,4 +80,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  # environments/production.rb
+  ENV["LC_ALL"] = "en_US.utf8"
+
 end
