@@ -1,5 +1,5 @@
 class PdfMergeController < ApplicationController
-  require "prawn"
+require "prawn"
 
   def home
   end
@@ -20,5 +20,4 @@ class PdfMergeController < ApplicationController
     end
 
   end
-
 end
