@@ -1,17 +1,10 @@
-.form.form-horizontal.form-group
-%label#exampleInputFile
-File input
-= form_tag({action: :upload}, multipart: true) do
-  = file_field_tag 'pdf'
-
-%label
-File 2 input
-= form_tag({action: :upload}, multipart: true) do
-  = file_field_tag 'pdf1'
-
-  %button.btn.btn-default
-    Submit
-
+.well
+  = form_tag '/upload', method: :post, multipart: true do
+    .form-group
+      = file_field_tag :file1
+    .form-group
+      = file_field_tag :file2
+    %button.btn.btn-primary MERGE!
 
 
 

@@ -20,6 +20,7 @@ gem 'rjb'
 gem 'pdf-merger'
 gem "binding_of_caller"
 gem "better_errors"
+gem 'prawn'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
