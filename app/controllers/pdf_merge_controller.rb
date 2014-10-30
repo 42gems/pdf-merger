@@ -18,6 +18,5 @@ require "prawn"
         end
       end
     end
-
   end
 end
