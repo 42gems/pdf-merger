@@ -4,8 +4,7 @@ class PdfMergeController < ApplicationController
   end
 
   def upload
-    path = MergePDF.merge(params[:file1], params[:file2])
-    send_file path,
-              type: "application/pdf"
+     send_file MergePDF.merge(params[:file1], params[:file2]),
+               type: "application/pdf"
   end
 end
