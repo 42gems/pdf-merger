@@ -11,9 +11,9 @@ class PdfMergeController < ApplicationController
     pdf.add_file document.path
     pdf.add_file document1.path
     # TODO no CAPS in the file names and folders, use underscores - it's convention
-    pdf.save_as "app/DownloadPDF/assignment.pdf"
+    pdf.save_as "app/download_pdf/assignment.pdf"
 
-    send_file 'app/DownloadPDF/assignment.pdf',
+    send_file 'app/download_pdf/assignment.pdf',
               type: "application/pdf"
   end
 end
