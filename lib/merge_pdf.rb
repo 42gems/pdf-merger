@@ -5,8 +5,8 @@ module Merge_pdf
     path = "merged_pdfs/assignment.pdf"
     pdf.add_file document1.path
     pdf.add_file document2.path
-    pdf.save_as "#{path}"
-    return path
+    pdf.save_as path
+    path
   end
 
 end
