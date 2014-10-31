@@ -1,4 +1,8 @@
+#!/PdfMege/lib/merge_pdf.rb
+require_relative '../../lib/merge_pdf'
+
 class PdfMergeController < ApplicationController
+  include Merge_pdf
 
   def home
   end
@@ -6,13 +10,8 @@ class PdfMergeController < ApplicationController
   def upload
     document = params[:file1]
     document1 = params[:file2]
-
-    pdf = PDF::Merger.new
-    pdf.add_file document.path
-    pdf.add_file document1.path
-    pdf.save_as "merged_pdfs/assignment.pdf"
-
-    send_file 'merged_pdfs/assignment.pdf',
+    path = Merge_pdf.merge(document, document1)
+    send_file path.to_s,
               type: "application/pdf"
   end
 end
