@@ -16,4 +16,4 @@
 /tmp
 /.idea
 *.swp
-/.download_pdf/*
+/merged_pdfs/*.pdf
