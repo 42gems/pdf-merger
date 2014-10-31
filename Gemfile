@@ -21,6 +21,7 @@ gem 'pdf-merger'
 gem "binding_of_caller"
 gem "better_errors"
 gem 'prawn'
+gem 'debugger'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
