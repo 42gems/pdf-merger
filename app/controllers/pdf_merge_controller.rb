@@ -15,8 +15,7 @@ require "prawn"
     pdf_final.render_file "assignment.pdf"
     pdf.save_as "assignment.pdf"
 
-    send_data pdf_final.render,
-              filename:"assignment.pdf",
+    send_file 'assignment.pdf',
               type: "application/pdf"
   end
 end
