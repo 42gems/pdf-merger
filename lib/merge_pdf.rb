@@ -1,4 +1,4 @@
-module Merge_pdf
+module MergePDF
 
   def self.merge(document1, document2)
     pdf = PDF::Merger.new
