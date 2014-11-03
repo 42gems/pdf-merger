@@ -1,12 +1,13 @@
 module MergePDF
 
-  def self.merge(document1, document2)
-    pdf = PDF::Merger.new
+  def self.merge(data)
     path = "merged_pdfs/assignment.pdf"
-    pdf.add_file document1.path
-    pdf.add_file document2.path
-    pdf.save_as path
+    data.map {|key,value|
+      pdf = PDF::Merger.new
+      pdf.add_file value.path
+      pdf.save_as path
+    }
     path
-  end
+    end
 
-end
+  end
