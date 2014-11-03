@@ -4,5 +4,5 @@
 
 $ ->
    $("#add").click ->
-    $("#fields").append ("<div class='form-group' id='fields'> <input id='files_' name='files[]' type='file'> </div>")
+    $("#fields").append("<div class='form-group' id='fields'> <input id='files_' name='files[]' type='file'> </div>")
 
