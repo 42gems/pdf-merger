@@ -3,6 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-    $("#add").click ->
-    $("#fields").append("<div class='form-group' id='fields'> <input id='files_' name='files[]' type='file'> </div>")
+   $("#add").click ->
+    $(".fields").append("<div class='form-group' id='fields'> <input id='files_' name='files[]' type='file'> </div>")
 
