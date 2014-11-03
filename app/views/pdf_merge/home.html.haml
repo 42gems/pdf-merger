@@ -1,9 +1,9 @@
 .well
   = form_tag '/upload', method: :post, multipart: true do
-    .form-group{:id => "fields"}
+    #fields.form-group
       = file_field_tag 'files[]'
     .form-group
       = file_field_tag 'files[]'
-    %button.btn.btn-primary{:type=>"button", :id=> "add"} ADDING FIELD
+    %button#add.btn.btn-primary{type: "button"} Add file
     %button.btn.btn-primary MERGE!
 
