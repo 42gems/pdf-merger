@@ -4,9 +4,7 @@
 $ ->
   $('input[type=file]').bootstrapFileInput();
   $("#add").click ->
-    $(".fields").append("<table class='table'><td><a class='file-input-wrapper btn btn-default '>
-                        <span>Browse</span><input id='files_' name='files[]' type='file'></a>
-                        </td><td><button class='btn btn-primary delete' type='button'>Delete</button></td></table>")
+    $(".table").append("<tr><td><a class='file-input-wrapper btn btn-default '> <span>Browse</span><input id='files_' name='files[]' type='file' style='left: -215px; top: 8px;'></a> </td><td><button class='btn btn-primary delete' type='button'>Delete</button></td></tr>")
     $(':not(.file-input-wrapper) > input[type=file]').bootstrapFileInput();
 
     $('.delete').click ->
