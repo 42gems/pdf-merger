@@ -19,7 +19,7 @@ gem 'rjb'
 gem 'pdf-merger'
 gem 'binding_of_caller'
 gem 'better_errors'
-gem 'debugger', '~> 1.6.8'
+gem 'byebug'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
