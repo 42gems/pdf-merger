@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
-
+java_home = '/usr/lib/jvm/java-6-openjdk'
+ENV['JAVA_HOME'] = java_home if Dir.exist?(java_home)
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -21,7 +20,6 @@ gem 'pdf-merger'
 gem 'binding_of_caller'
 gem 'better_errors'
 gem 'debugger'
-
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
