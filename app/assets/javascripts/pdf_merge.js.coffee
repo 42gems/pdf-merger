@@ -4,10 +4,9 @@
 $ ->
   $('input[type=file]').bootstrapFileInput();
   $("#add").click ->
-    $(".table").append("<tr><td><a class='file-input-wrapper btn btn-default '> <span>Browse</span><input id='files_' name='files[]' type='file'>
-                        </a> </td><td><button class='btn btn-primary delete' type='button'>Delete</button></td></tr>")
-    $(':not(.file-input-wrapper) > input[type=file]').bootstrapFileInput();
+    $(".table").append((JST["row.jst.hamlc"])).bootstrapFileInput();
 
     $('.delete').click ->
       $(this).parent().closest('tr').remove()
     $
+

@@ -1,7 +1,7 @@
 .well
   = form_tag '/upload', method: :post, multipart: true do
     .fields
-      %table.table
+      %table#sortable.table
         %tbody
           %tr
             %td= file_field_tag 'files[]'

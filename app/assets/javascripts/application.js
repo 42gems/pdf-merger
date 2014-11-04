@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap.file-input.js
+//= require_tree ../javascripts/templates
 
