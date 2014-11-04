@@ -19,7 +19,7 @@ gem 'rjb'
 gem 'pdf-merger'
 gem 'binding_of_caller'
 gem 'better_errors'
-gem 'debugger'
+gem 'debugger', '~> 1.6.8'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -43,5 +43,5 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 #Use debugger
- gem 'debugger', group: [:development, :test]
+#gem 'debugger', group: [:development, :test]
 
