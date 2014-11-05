@@ -1,0 +1,7 @@
+%tr
+  %td
+    %a.file-input-wrapper.btn.btn-default
+      %span Browse
+      %input#files_{:name => "files[]", :type => "file"}
+  %td
+    %button.btn.btn-primary.delete{:type => "button"} Delete

@@ -21,10 +21,9 @@ gem 'binding_of_caller'
 gem 'better_errors'
 gem 'byebug'
 gem 'pry'
-group :assets do
-  gem 'haml_coffee_assets', :git => 'https://github.com/netzpirat/haml_coffee_assets.git', :branch => "master"
-  gem 'execjs'
-end
+gem 'haml_coffee_assets', :git => 'https://github.com/netzpirat/haml_coffee_assets.git', :branch => "master"
+gem 'execjs'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
