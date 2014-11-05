@@ -21,7 +21,7 @@ gem 'binding_of_caller'
 gem 'better_errors'
 gem 'byebug'
 gem 'pry'
-gem 'haml_coffee_assets', :git => 'https://github.com/netzpirat/haml_coffee_assets.git', :branch => "master"
+gem 'haml_coffee_assets', git: 'https://github.com/netzpirat/haml_coffee_assets.git', branch: "master"
 gem 'execjs'
 
 
