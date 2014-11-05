@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap.file-input.js
+//= require hamlcoffee
 //= require_tree .
