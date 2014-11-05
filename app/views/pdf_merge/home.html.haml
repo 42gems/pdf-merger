@@ -1,13 +1,12 @@
-.well
-  = form_tag '/upload', method: :post, multipart: true do
-    .fields
-      %table#sortable.table
-        %tbody
-          %tr
-            %td= file_field_tag 'files[]'
-          %tr
-            %td= file_field_tag 'files[]'
-    %button#add.btn.btn-primary{type: "button"} Add file
-    %button.btn.btn-primary MERGE!
-
-
+.jumbotron
+  .lead
+    = form_tag '/upload', method: :post, multipart: true do
+      .fields
+        %table.table.table-condensed
+          %tbody
+            %tr
+              %td= file_field_tag 'files[]'
+            %tr
+              %td= file_field_tag 'files[]'
+      %button#add.btn.btn-primary{type: "button"} Add file
+      %button.btn.btn-primary MERGE!
