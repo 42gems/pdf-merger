@@ -5,6 +5,7 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+#Bundler.require(:default, :assets, Rails.env)
 
 module PdfMege
   class Application < Rails::Application
@@ -21,6 +22,7 @@ module PdfMege
     # config.i18n.default_locale = :de
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
-    config.assets.initialize_on_precompile = false
+    #config.assets.initialize_on_precompile = false
+
   end
 end

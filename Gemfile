@@ -20,9 +20,9 @@ gem 'pdf-merger'
 gem 'binding_of_caller'
 gem 'better_errors'
 gem 'byebug'
-
+gem 'pry'
 group :assets do
-  gem 'haml_coffee_assets'
+  gem 'haml_coffee_assets', :git => 'https://github.com/netzpirat/haml_coffee_assets.git', :branch => "master"
   gem 'execjs'
 end
 
@@ -39,8 +39,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'pg'
-gem 'jquery-ui-rails'
-
 gem 'requirejs-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
