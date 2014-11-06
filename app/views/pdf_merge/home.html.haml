@@ -5,10 +5,14 @@
         %table.table.table-condensed
           %tbody
             %tr
-              %td= file_field_tag 'files[]'
+              %td
+                .fa.fa-file-pdf-o
+                = file_field_tag 'files[]'
               %td
             %tr
-              %td= file_field_tag 'files[]'
+              %td
+                .fa.fa-file-pdf-o
+                = file_field_tag 'files[]'
               %td
       %button#add.btn.btn-primary.fa.fa-plus{type: "button"}
-      %button.btn.btn-primary.fa.fa-file-pdf-o Merge
+      %button.btn.btn-primary.fa.fa-file-pdf-o.fa-align-left Merge
