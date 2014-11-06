@@ -4,4 +4,4 @@
       %span Browse
       %input#files_{name: "files[]", type: "file"}
   %td
-    %button.btn.btn-primary.btn-danger.delete{type: "button",class: "fa fa-minus"}
+    %button.btn.btn-primary.btn-danger.delete.fa.fa-minus{type: "button"}
