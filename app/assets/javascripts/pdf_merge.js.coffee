@@ -3,5 +3,5 @@ $ ->
   $("#add").click ->
     $(".table").append(JST['templates/_row'])
 
-    $('.btn.btn-primary.btn-danger.fa.fa-trash-o.fa-lg').click ->
+    $('.delete').click ->
       $(this).parent().closest('tr').remove()

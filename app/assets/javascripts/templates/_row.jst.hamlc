@@ -1,8 +1,10 @@
 %tr
   %td
-    .fa.fa-file-pdf-o
     %a.file-input-wrapper.btn.btn-default
-      %span Browse
+      %i.fa.fa-file-pdf-o
+      Browse
       %input#files_{name: "files[]", type: "file"}
   %td
-    %button.btn.btn-primary.btn-danger.fa.fa-trash-o.fa-lg{type: "button"}
+    %button.delete.btn.btn-danger{type: "button"}
+      %i.fa.fa-trash-o.fa-lg
+      Delete

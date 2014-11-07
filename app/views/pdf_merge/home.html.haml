@@ -2,17 +2,16 @@
   .lead
     = form_tag '/upload', method: :post, multipart: true do
       .fields
-        %table.table.table-condensed
+        %table#sortable.table.table-condensed
           %tbody
             %tr
               %td
-                .fa.fa-file-pdf-o
-                = file_field_tag 'files[]'
-              %td
+                %input#files_.fa.fa-file-pdf-o{name: "files[]", type: "file"}
+                %td
             %tr
-              %td
-                .fa.fa-file-pdf-o
-                = file_field_tag 'files[]'
-              %td
+              %tr
+                %td
+                  %input#files_.fa.fa-file-pdf-o{name: "files[]", type: "file"}
+                %td
       %button#add.btn.btn-primary.fa.fa-plus{type: "button"}
       %button.btn.btn-primary.fa.fa-file-pdf-o.fa-align-left Merge

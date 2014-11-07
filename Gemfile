@@ -25,6 +25,7 @@ gem 'haml_coffee_assets', git: 'https://github.com/netzpirat/haml_coffee_assets.
 gem 'execjs'
 gem 'rails_12factor'
 gem 'font-awesome-rails'
+gem 'jquery-ui-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
