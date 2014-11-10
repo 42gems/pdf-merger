@@ -19,4 +19,4 @@ end
   def check
     @data.all? {|file| file.content_type =~ /.pdf$/  }
   end
-  end
+end
