@@ -17,11 +17,6 @@ end
 end
 
   def check
-    @data.each do |file|
-      unless file.content_type =~ /.pdf$/
-        return false
-      end
-      true
-    end
+    @data.all? {|file| file.content_type =~ /.pdf$/  }
   end
-end
+  end
