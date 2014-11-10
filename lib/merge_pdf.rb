@@ -2,7 +2,7 @@ class MergePDF
 
   def initialize(params)
     @data = params
-  end
+end
 
   def merge
     if check
@@ -18,11 +18,10 @@ end
 
   def check
     @data.each do |file|
-      if file.content_type =~ /.pdf$/
-        true
-      else
-      return false
+      unless file.content_type =~ /.pdf$/
+        return false
       end
+      true
     end
   end
 end
