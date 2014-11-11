@@ -1,6 +1,9 @@
 == README
 = PdfMerge
-This application is for merging pdf files. You can merge few files in one. You can merge a lot of files.
+This application is for merging pdf files.
+
+
+You can merge few files in one. You can merge a lot of files.
 If you want to change order of merge you can drag and drop rows.
 
 This application uses
