@@ -6,7 +6,7 @@ Features of application:
 
 * Merges a lot of pdf files in one.
 * Change order of merge via drag and drop rows.
-* Add or delete rows for merging files.
+* Change the number of merging files.
 * Validate file's format.
 
 This application uses:
