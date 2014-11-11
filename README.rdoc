@@ -2,11 +2,15 @@
 = PdfMerge
 This application is for merging pdf files.
 
+Features of application:
 
-You can merge few files in one. You can merge a lot of files.
-If you want to change order of merge you can drag and drop rows.
+* Merges few files in one. 
+* Merge a lot of files.
+* Change order of merge via drag and drop rows.
+* Add or delete rows for adding.
+* It merges only pdf files.
 
-This application uses
+This application uses:
 
 * Ruby on Rails 4.1.0
 
