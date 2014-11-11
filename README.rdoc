@@ -2,9 +2,13 @@
 = PdfMerge
 This application is for merging pdf files.
 
+Features of application:
 
-You can merge few files in one. You can merge a lot of files.
-If you want to change order of merge you can drag and drop rows.
+* You can merge few files in one. 
+* You can merge a lot of files.
+* If you want to change order of merge you can drag and drop rows.
+* You can add or delete rows for adding.
+* It merges only pdf files.
 
 This application uses:
 
