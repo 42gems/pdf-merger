@@ -6,7 +6,7 @@ class PdfMergeController < ApplicationController
       send_file merger.merge, type: "application/pdf"
     else
       flash[:notice] = "Files must be .pdf"
-      redirect_to :back
+      redirect_to root_path
     end
   end
 end

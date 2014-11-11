@@ -2,8 +2,8 @@
   .lead
     = form_tag '/upload', method: :post, multipart: true do
       .fields
-        %table#sortable.table.table-condensed
-          %tbody
+        %table.table.table-condensed
+          %tbody#sortable
             %tr
               %td
                 %input#files_{name: "files[]", type: "file"}

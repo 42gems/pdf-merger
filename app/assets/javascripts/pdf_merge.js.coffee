@@ -6,3 +6,5 @@ $ ->
 
     $('.delete').click ->
       $(this).parent().closest('tr').remove()
+
+  $("#sortable").sortable()
