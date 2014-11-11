@@ -4,10 +4,10 @@ This application is for merging pdf files.
 
 Features of application:
 
-* Merges a lot of pdf files in one.
-* Change order of merge via drag and drop rows.
-* Change the number of merging files.
-* Validate file's format.
+* Merge a lot of pdf files in one.
+* Changes order of merge via drag and drop rows.
+* Changes the number of merging files.
+* Validates file's format.
 
 This application uses:
 
