@@ -5,3 +5,5 @@
     %button.delete.btn.btn-primary.btn-danger{type: "button"}
       %i.fa.fa-trash-o.fa-lg
       Delete
+  %td
+    %i.handle.fa.fa-arrows
