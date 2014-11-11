@@ -8,6 +8,12 @@ If you want to change order of merge you can drag and drop rows.
 
 This application uses:
 
- 
+* Ruby on Rails 4.1.0
+
+* Haml
+
+* Coffee-rails  4.0.0
+
+* Deploy on Heroku
 
 You can try this {application}[https://pdfmerger1.herokuapp.com]
