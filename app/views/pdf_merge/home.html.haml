@@ -3,19 +3,17 @@
     = form_tag '/upload', method: :post, multipart: true do
       .fields
         %table.table.table-condensed
-          %tbody#sortable
+          %tbody#sortable{cursor:"pointer"}
             %tr
               %td
+                %i.handle.fa.fa-arrows
                 %input#files_{name: "files[]", type: "file"}
               %td
-              %td
-                %i.handle.fa.fa-arrows
             %tr
               %td
+                %i.handle.fa.fa-arrows
                 %input#files_{name: "files[]", type: "file"}
               %td
-              %td
-                %i.handle.fa.fa-arrows
       %button#add.btn.btn-primary{type: "button"}
         %i.fa.fa-plus
       %button.btn.btn-primary
