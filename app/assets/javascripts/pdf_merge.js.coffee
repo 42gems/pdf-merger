@@ -7,4 +7,4 @@ $ ->
     $('.delete').click ->
       $(this).parent().closest('tr').remove()
 
-  $("#sortable").sortable({ handle: ".handle",cursor: "pointer"})
+  $("#sortable").sortable({ handle: ".handle"})
