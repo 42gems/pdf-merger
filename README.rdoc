@@ -1,9 +1,9 @@
 == README
-
+= PdfMerge
 This application is for merging pdf files. You can merge few files in one. You can merge a lot of files.
 If you want to change order of merge you can drag and drop rows.
 
-I used
+This application uses
 
 * Ruby on Rails 4.1.0
 
@@ -13,4 +13,4 @@ I used
 
 * Deploy on Heroku
 
-You can try this application on https://pdfmerger1.herokuapp.com/
+You can try this {application}[https://pdfmerger1.herokuapp.com]
