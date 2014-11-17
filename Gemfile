@@ -26,6 +26,7 @@ gem 'execjs'
 gem 'rails_12factor'
 gem 'font-awesome-rails'
 gem 'jquery-ui-rails'
+gem 'capybara'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -39,6 +40,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-core', '~> 3.0'
+end
 gem 'pg'
 gem 'requirejs-rails'
 # Use ActiveModel has_secure_password
@@ -52,4 +57,3 @@ gem 'requirejs-rails'
 
 #Use debugger
 #gem 'debugger', group: [:development, :test]
-

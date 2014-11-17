@@ -1,3 +1,4 @@
+== README
 = PdfMerge
 This application is for merging pdf files.
 
