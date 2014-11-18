@@ -1,8 +1,10 @@
 require 'spec_helper'
 
-describe 'main page' do
-  it 'check buttons' do
+feature 'my first feature' do
+  background do
     visit '/'
+  end
+  scenario 'my first test' do
     expect(page).to have_selector('button#add')
     expect(page).to have_selector('button.delete')
   end
