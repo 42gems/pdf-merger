@@ -8,4 +8,7 @@ feature 'my first feature' do
     expect(page).to have_selector('button#add')
     expect(page).to have_selector('button.delete')
   end
+  scenario 'click button add' do
+    find_by_id('add').click
+  end
 end
