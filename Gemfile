@@ -52,6 +52,7 @@ end
 
 gem 'pg'
 gem 'requirejs-rails'
+gem 'fuubar'
 
 group :production do
   gem 'rails_12factor'
