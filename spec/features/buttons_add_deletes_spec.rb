@@ -15,11 +15,13 @@ feature 'Tests for main page' do
   scenario 'User adds new row ', js: true do
     find_by_id('add').click
     page.should have_css('table.table tr', count: 3)
+    page.should have_css('button.delete', count: 3)
   end
 
   scenario 'User deletes row', js: true do
     find_by_id('add').click
     first(:button, 'Delete').click
     page.should have_css('table.table tr', count: 2)
+    page.should have_css('button.delete', count: 0)
   end
 end
