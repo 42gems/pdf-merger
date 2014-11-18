@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature 'Tests for buttons' do
+feature 'should add and delete table rows' do
   background do
     visit(root_path)
   end
