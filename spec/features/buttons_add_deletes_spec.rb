@@ -1,14 +1,23 @@
 require 'spec_helper'
 
-feature 'my first feature' do
+feature 'Tests for buttons' do
   background do
-    visit '/'
+    visit(root_path)
   end
   scenario 'my first test' do
     expect(page).to have_selector('button#add')
     expect(page).to have_selector('button.delete')
   end
-  scenario 'click button add' do
+
+  scenario 'test add button', :js => true do
     find_by_id('add').click
+    page.should have_css('table.table tr', count: 3)
   end
+
+  scenario 'test delete button', :js => true do
+    find_by_id('add').click
+    first(:button, 'Delete').click
+    page.should have_css('table.table tr', count: 2)
+  end
+
 end

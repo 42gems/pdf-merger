@@ -26,7 +26,6 @@ gem 'execjs'
 gem 'rails_12factor'
 gem 'font-awesome-rails'
 gem 'jquery-ui-rails'
-gem 'capybara'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -41,9 +40,16 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
-  gem 'rspec-core', '~> 3.0'
+  gem 'rspec-rails', '~> 2.14.2'
+  gem 'rspec-core', '~> 2.14.2'
 end
+
+group :test do
+  gem 'capybara'
+  gem 'capybara-webkit'
+  gem 'database_cleaner'
+end
+
 gem 'pg'
 gem 'requirejs-rails'
 # Use ActiveModel has_secure_password
