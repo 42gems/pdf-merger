@@ -4,7 +4,7 @@ feature 'Tests for main page' do
   background do
     visit(root_path)
   end
-  scenario 'Should check content on page' do
+  scenario 'User should check content on page' do
     expect(page).to have_title 'PDF Merger'
     expect(page).to have_selector('button#add',visible: true)
     expect(page).to have_selector('button.delete',visible: false)
