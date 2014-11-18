@@ -23,7 +23,6 @@ gem 'byebug'
 gem 'pry'
 gem 'haml_coffee_assets', git: 'https://github.com/netzpirat/haml_coffee_assets.git', branch: "master"
 gem 'execjs'
-gem 'rails_12factor'
 gem 'font-awesome-rails'
 gem 'jquery-ui-rails'
 
@@ -48,6 +47,7 @@ group :test do
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'database_cleaner'
+  gem 'launchy', '2.1.0'
 end
 
 gem 'pg'

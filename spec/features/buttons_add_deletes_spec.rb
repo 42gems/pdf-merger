@@ -1,23 +1,25 @@
 require 'spec_helper'
 
-feature 'should add and delete table rows' do
+feature 'Tests for main page' do
   background do
     visit(root_path)
   end
-  scenario 'my first test' do
-    expect(page).to have_selector('button#add')
-    expect(page).to have_selector('button.delete')
+  scenario 'Should check content on page' do
+    expect(page).to have_title 'PDF Merger'
+    expect(page).to have_selector('button#add',visible: true)
+    expect(page).to have_selector('button.delete',visible: false)
+    expect(page).to have_selector('input')
+    expect(page).to have_selector(' button.btn',visible: true)
   end
 
-  scenario 'test add button', :js => true do
+  scenario 'User adds new row ', js: true do
     find_by_id('add').click
     page.should have_css('table.table tr', count: 3)
   end
 
-  scenario 'test delete button', :js => true do
+  scenario 'User deletes row', js: true do
     find_by_id('add').click
     first(:button, 'Delete').click
     page.should have_css('table.table tr', count: 2)
   end
-
 end
