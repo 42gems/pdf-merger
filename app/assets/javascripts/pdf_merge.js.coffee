@@ -1,6 +1,7 @@
 $ ->
   $('input[type=file]').bootstrapFileInput()
   $('.delete').hide()
+
   $("#add").click ->
     $(".table").append(JST['templates/_row'])
     $(':not(.file-input-wrapper) > input[type=file]').bootstrapFileInput();

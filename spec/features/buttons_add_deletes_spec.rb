@@ -35,5 +35,9 @@ feature 'Tests for main page' do
     expect(page).to have_selector(' button.btn',visible: true)
   end
 
-
+  scenario 'User should not send empty field ' do
+    find('.btn.btn-primary',text: 'Merge').click
+    page.driver.post('/upload')
+    page.driver.status_code.should eql 500
+  end
 end

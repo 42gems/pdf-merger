@@ -53,6 +53,7 @@ end
 gem 'pg'
 gem 'requirejs-rails'
 gem 'fuubar'
+gem 'jquery-validation-rails'
 
 group :production do
   gem 'rails_12factor'

@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require jquery-ui/sortable
 //= require jquery-ui/effect-highlight
+//= require jquery.validate
+//= require jquery.validate.additional-methods
 //= require turbolinks
 //= require bootstrap.file-input.js
 //= require hamlcoffee
