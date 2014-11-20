@@ -5,7 +5,7 @@ feature 'Tests for main page' do
     visit(root_path)
   end
 
-  scenario 'User should see PDF Merger' do
+  scenario 'User should see title PDF Merger' do
     expect(page).to have_title 'PDF Merger'
   end
 
@@ -36,13 +36,15 @@ feature 'Tests for main page' do
   end
 
   #incorrect
+=begin
   scenario 'User should not send empty field ' do
     find('.btn.btn-primary',text: 'Merge').click
     page.driver.post('/upload')
     page.driver.status_code.should eql 500
   end
+=end
 
-  scenario 'User  field ' do
+  scenario 'User should not be able to upload empty fields' do
     find(:css, '#first_firstName').set('./spec/rails_helper.rb')
     find(:css, '#second').set('./spec/rails_helper.rb')
     find('.btn.btn-primary',text: 'Merge').click
