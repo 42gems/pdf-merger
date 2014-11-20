@@ -35,17 +35,8 @@ feature 'Tests for main page' do
     expect(page).to have_selector(' button.btn',visible: true)
   end
 
-  #incorrect
-=begin
-  scenario 'User should not send empty field ' do
-    find('.btn.btn-primary',text: 'Merge').click
-    page.driver.post('/upload')
-    page.driver.status_code.should eql 500
-  end
-=end
-
   scenario 'User should not be able to upload empty fields' do
-    find(:css, '#first_firstName').set('./spec/rails_helper.rb')
+    find(:css, '#first').set('./spec/rails_helper.rb')
     find(:css, '#second').set('./spec/rails_helper.rb')
     find('.btn.btn-primary',text: 'Merge').click
     expect(page).to have_selector('.alert.alert-danger')
