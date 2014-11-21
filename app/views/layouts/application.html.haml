@@ -2,14 +2,14 @@
 %html
   %head
     %title PDF Merger
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag    'application', media:'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body.container
     .header
       %h3.text-muted PDF Merge
       =if flash[:notice]
-        .alert.alert-danger{role: "alert"}
+        .alert.alert-danger{role:"alert"}
           = flash[:notice]
     = yield
     .footer
