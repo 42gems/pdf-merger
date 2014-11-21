@@ -1,6 +1,6 @@
 .jumbotron
   .lead
-    = form_tag '/upload', method: :post, multipart:true do
+    = form_tag '/upload',id:"form", method: :post, multipart:true do
       .fields
         %table.table.table-condensed
           %tbody#sortable

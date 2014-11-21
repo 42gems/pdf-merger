@@ -13,3 +13,10 @@ $ ->
 
   $("#sortable").sortable
     handle: '.handle'
+
+  $('#form').validate
+    rules:
+      "files[]":
+        required:true
+    messages:
+      "files[]":"Field cannot be empty"
