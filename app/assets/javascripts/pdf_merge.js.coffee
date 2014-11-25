@@ -13,8 +13,7 @@ $ ->
 
   $("#sortable").sortable
     handle: '.handle'
-
-
+    
   $('#form').validate
     rules:
       "files[0]":
