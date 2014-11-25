@@ -14,9 +14,14 @@ $ ->
   $("#sortable").sortable
     handle: '.handle'
 
+
   $('#form').validate
     rules:
-      "files[]":
+      "files[0]":
         required:true
-    messages:
-      "files[]":"Field cannot be empty"
+      messages:
+        "files[0]":"Field cannot be empty"
+      "files[1]":
+        required:true
+      messages:
+        "files[1]":"Field cannot be empty too "
