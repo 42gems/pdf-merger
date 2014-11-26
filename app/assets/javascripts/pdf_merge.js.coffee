@@ -1,9 +1,14 @@
 $ ->
   $('input[type=file]').bootstrapFileInput()
   $('.delete').hide()
-
+  x = 1
   $("#add").click ->
-    $(".table").append(JST['templates/_row'])
+    x++
+    $(".table").append(JST['templates/_row'] counter: x)
+    $("#form").validate()
+    $("input[name=\"files["+x+"]\"]").rules "add",
+    required: true
+
     $(':not(.file-input-wrapper) > input[type=file]').bootstrapFileInput();
     $('.delete').show()
 
@@ -13,14 +18,10 @@ $ ->
 
   $("#sortable").sortable
     handle: '.handle'
-    
+
   $('#form').validate
     rules:
       "files[0]":
         required:true
-      messages:
-        "files[0]":"Field cannot be empty"
       "files[1]":
         required:true
-      messages:
-        "files[1]":"Field cannot be empty too "
