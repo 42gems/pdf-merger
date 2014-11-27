@@ -1,12 +1,12 @@
 $ ->
   $('input[type=file]').bootstrapFileInput()
   $('.delete').hide()
-  id_file = 1
+  file_id = 1
   $("#add").click ->
-    id_file++
-    $(".table").append(JST['templates/_row'] counter: id_file)
+    file_id++
+    $(".table").append(JST['templates/_row'] counter: file_id)
     $("#form").validate()
-    $("input[name=\"files["+id_file+"]\"]").rules "add",
+    $("input[name=\"files["+file_id+"]\"]").rules "add",
     required: true
 
     $(':not(.file-input-wrapper) > input[type=file]').bootstrapFileInput();
