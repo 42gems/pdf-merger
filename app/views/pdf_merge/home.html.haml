@@ -1,26 +1,26 @@
 .jumbotron
   .lead
-    = form_tag'/upload', id:"form", method: :post, multipart:true do
+    = form_tag'/upload', id: "form", method: :post, multipart:true do
       .fields
         %table.table.table-condensed
           %tbody#sortable
             %tr
               %td
                 %i.handle.fa.fa-arrows
-                %input{id:"files_0", name:"files[0]", type:"file"}
+                %input{id: "files_0", name: "files[0]", type: "file"}
               %td
-                %button.delete.btn.btn-primary.btn-danger{type:"button"}
+                %button.delete.btn.btn-primary.btn-danger{type: "button"}
                   %i.fa.fa-trash-o.fa-lg
                   Delete
             %tr
               %td
                 %i.handle.fa.fa-arrows
-                %input{id:"files_1", name:"files[1]", type:"file"}
+                %input{id: "files_1", name: "files[1]", type: "file"}
               %td
-                %button.delete.btn.btn-primary.btn-danger{type:"button"}
-                  %i.fa.fa-trash-o.fa-lg
+                %button.delete.btn.btn-primary.btn-danger{type: "button"}
+                  %i.fa.fa-trash-o.fa-l
                   Delete
-      %button#add.btn.btn-primary{type:"button"}
+      %button#add.btn.btn-primary{type: "button"}
         %i.fa.fa-plus
       %button.btn.btn-primary
         %i.fa.fa-file-pdf-o.fa-align-left

@@ -22,6 +22,6 @@ $ ->
   $('#form').validate
     rules:
       "files[0]":
-        required:true
+        required: true
       "files[1]":
-        required:true
+        required: true
