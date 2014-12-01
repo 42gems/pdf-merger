@@ -27,6 +27,6 @@ $ ->
       "files[1]":
         required: true
     errorElement: "span"
-    errorClass: "help-block"
+    errorClass: "help-block alert alert-danger"
     errorPlacement: (error, element) ->
       error.insertAfter element.parent()
