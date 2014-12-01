@@ -1,4 +1,5 @@
 $ ->
+  $.validator.messages.required = 'This field cannot be blank'
   $('input[type=file]').bootstrapFileInput()
   $('.delete').hide()
   file_id = 1
