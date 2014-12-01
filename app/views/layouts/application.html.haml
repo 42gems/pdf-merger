@@ -8,9 +8,11 @@
   %body.container
     .header
       %h3.text-muted PDF Merge
-      =if flash[:notice]
+      = unless flash[:notice].nil?
         .alert.alert-danger{role:"alert"}
           = flash[:notice]
     = yield
     .footer
-      %p © Company 2014
+      %p
+        42Gems
+        = Time.now.strftime("%Y")
