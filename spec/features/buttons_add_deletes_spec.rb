@@ -36,7 +36,7 @@ feature 'Tests for main page' do
   end
 
   scenario 'User should not be able to upload empty fields' do
-    first(:css,'#files_').set('./spec/rails_helper.rb')
+    first(:css,'#files_0').set('./spec/rails_helper.rb')
     find('.btn.btn-primary', text:'Merge').click
     expect(page).to have_selector('.alert.alert-danger')
   end
