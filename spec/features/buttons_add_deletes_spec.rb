@@ -42,13 +42,13 @@ feature 'Tests for main page' do
   end
 
   scenario 'User should see validation for starting fields', js: true do
-    find_by_id('merge').click
+    find('.btn.btn-primary', text:'Merge').click
     page.should have_content('This field cannot be blank',count: 2)
   end
 
   scenario 'User should see validation for fields', js: true do
     find_by_id('add').click
-    find_by_id('merge').click
+    find('.btn.btn-primary', text:'Merge').click
     page.should have_content('This field cannot be blank',count: 3)
   end
 
