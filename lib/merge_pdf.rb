@@ -5,7 +5,7 @@ class MergePDF
   end
 
   def merge
-    if check
+    if valid?
       path = "merged_pdfs/assignment.pdf"
       pdf = PDF::Merger.new
       @data.values.each {|file_path| pdf.add_file file_path.path}
@@ -16,7 +16,7 @@ class MergePDF
     end
   end
 
-  def check
+  def valid?
     @data.values.all? {|file| file.content_type =~ /.pdf$/}
   end
 end
