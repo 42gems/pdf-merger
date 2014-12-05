@@ -10,6 +10,7 @@ $ ->
     $("input[name=\"files["+file_id+"]\"]").rules "add",
     required: true
 
+    # TODO fix ';'
     $(':not(.file-input-wrapper) > input[type=file]').bootstrapFileInput();
     $('.delete').show()
 

@@ -1,8 +1,10 @@
 %tr
   %td
     %i.handle.fa.fa-arrows
+    / TODO: FIX
     %input{id:"files_#{@counter}", name:"files[#{@counter}]", type:"file"}
   %td
+    / TODO: FIX
     %button.delete.btn.btn-primary.btn-danger{type:"button"}
       %i.fa.fa-trash-o.fa-lg
       Delete
