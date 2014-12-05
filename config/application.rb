@@ -23,6 +23,5 @@ module PdfMege
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
     #config.assets.initialize_on_precompile = false
-
   end
 end

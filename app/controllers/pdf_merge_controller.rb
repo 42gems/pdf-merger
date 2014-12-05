@@ -2,10 +2,9 @@ class PdfMergeController < ApplicationController
 
   def upload
     merger = MergePDF.new(params)
-    # TODO avoid double method call here.
-    if merger.merge
-      # TODO fix
-      send_file merger.merge, type:"application/pdf"
+    file = merger.merge
+    if file
+      send_file file, filename: params[:title], type: "application/pdf"
     else
       flash[:notice] = "Files must be .pdf"
       redirect_to root_path

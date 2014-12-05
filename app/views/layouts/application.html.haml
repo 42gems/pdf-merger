@@ -9,12 +9,10 @@
     .header
       %h3.text-muted PDF Merge
       = if flash[:notice]
-        / TODO fix
-        .alert.alert-danger{role:"alert"}
+        .alert.alert-danger{role: "alert"}
           = flash[:notice]
     = yield
     .footer
       %p
-        / TODO: fix space between copyright and company name
-        ©42Gems
+        © 42Gems
         = Time.now.strftime("%Y")
