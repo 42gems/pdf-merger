@@ -1,7 +1,7 @@
 class PdfMergeController < ApplicationController
 
   def upload
-    merger = MergePDF.new(params[:files])
+    merger = MergePDF.new(params)
     if merger.merge
       send_file merger.merge, type:"application/pdf"
     else
