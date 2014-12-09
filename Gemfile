@@ -50,7 +50,9 @@ group :test do
   gem 'launchy', '2.1.0'
 end
 
-gem 'pg'
+gem 'unicorn'
+gem 'pg', group: :production
+
 gem 'requirejs-rails'
 gem 'fuubar'
 gem 'jquery-validation-rails'
@@ -58,6 +60,16 @@ gem 'jquery-validation-rails'
 group :production do
   gem 'rails_12factor'
 end
+
+group :development do
+  gem 'capistrano',  '~> 3.0', require: false
+  gem 'capistrano-unicorn', require: false
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+end
+
+gem 'thinking-sphinx'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
