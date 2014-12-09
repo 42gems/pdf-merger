@@ -26,6 +26,7 @@ gem 'execjs'
 gem 'font-awesome-rails'
 gem 'jquery-ui-rails'
 
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -62,6 +63,7 @@ group :production do
 end
 
 group :development do
+  gem 'net-ssh'
   gem 'capistrano',  '~> 3.0', require: false
   gem 'capistrano-unicorn', require: false
   gem 'capistrano-rails',   '~> 1.1', require: false

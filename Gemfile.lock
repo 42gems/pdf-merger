@@ -269,6 +269,7 @@ DEPENDENCIES
   jquery-ui-rails
   jquery-validation-rails
   launchy (= 2.1.0)
+  net-ssh
   pdf-merger
   pg
   pry

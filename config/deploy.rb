@@ -24,6 +24,7 @@ set :branch, 'master'
 
 # Default value for :pty is false
   set :pty, true
+  #set :ssh_options, { :forward_agent => true, :port => 4321 }
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml')
