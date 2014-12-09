@@ -16,7 +16,7 @@ role :db,  %w{bogdasya@93.76.243.147}
 
 #server 'example.com', user: 'bogdasya', roles: %w{web app}, my_property: :my_value
 set :password, ask('Server password', nil)
-server 'example.com', user: 'bogdasya', port: 22, password: fetch(:password), roles: %w{web app db}
+server '93.76.243.147', user: 'bogdasya', port: 22, password: fetch(:password), roles: %w{web app db}
 
 # Custom SSH Options
 # ==================
