@@ -1,22 +1,9 @@
-# Simple Role Syntax
-# ==================
-# Supports bulk-adding hosts to roles, the primary server in each group
-# is considered to be the first unless any hosts have the primary
-# property set.  Don't declare `role :all`, it's a meta role.
+role :app, %w{deploy@93.76.254.95}
+role :web, %w{deploy@93.76.254.95}
+role :db,  %w{deploy@93.76.254.95}
 
-role :app, %w{bogdasya@93.76.243.147}
-role :web, %w{bogdasya@93.76.243.147}
-role :db,  %w{bogdasya@93.76.243.147}
-
-# Extended Server Syntax
-# ======================
-# This can be used to drop a more detailed server definition into the
-# server list. The second argument is a, or duck-types, Hash and is
-# used to set extended properties on the server.
-
-#server 'example.com', user: 'bogdasya', roles: %w{web app}, my_property: :my_value
 set :password, ask('Server password', nil)
-server '93.76.243.147', user: 'bogdasya', port: 222, password: fetch(:password),forward_agent: true, roles: %w{web app db}
+server '93.76.254.95', user: 'deploy', port: 22, password: fetch(:password),forward_agent: true, roles: %w{web app db}
 
 # Custom SSH Options
 # ==================

@@ -63,9 +63,7 @@ group :production do
 end
 
 group :development do
-  gem 'net-ssh'
   gem 'capistrano',  '~> 3.0', require: false
-  gem 'capistrano-unicorn', require: false
   gem 'capistrano-rails',   '~> 1.1', require: false
   gem 'capistrano-bundler', '~> 1.1', require: false
 end
